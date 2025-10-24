@@ -2,7 +2,7 @@ import React, { use } from 'react';
 
 const Users2 = ({usersPromise}) => {
     const users = use(usersPromise)
-    console.log(users);
+    // console.log(users);
     return (
         <div>
             <h3>This is users2 page</h3>

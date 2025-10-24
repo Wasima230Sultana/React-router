@@ -6,7 +6,9 @@ const Post = ({post}) => {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
-        navigate('/')
+        // navigate('/Laptops')
+        navigate(`/Posts/${id}`);
+
     }
     return (
         <div style={{border:'2px solid blue'}}>
@@ -14,7 +16,7 @@ const Post = ({post}) => {
             <Link to={`/posts/${id}`}>
             <button> Show Details</button>
             </Link>
-            <button onClick={handleNavigate}>Details od : {id}</button>
+            <button onClick={handleNavigate}>Details of : {id}</button>
         </div>
     );
 };
